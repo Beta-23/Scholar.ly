@@ -1,4 +1,3 @@
 class Donor < ActiveRecord::Base
-has_many : students
-has_many : students, through: : students_donors
+has_many : students, through: : donors_students
 end
