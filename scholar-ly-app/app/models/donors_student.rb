@@ -1,4 +1,4 @@
-class StudentsDonor < ActiveRecord::Base
+class DonorsStudent < ActiveRecord::Base
   belongs_to :student
   belongs_to :donor
 end
