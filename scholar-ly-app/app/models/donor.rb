@@ -1,3 +1,5 @@
 class Donor < ActiveRecord::Base
-has_many :students, through: :donors_students
+  has_secure_password
+  has_many :student_donors
+  has_many :students, through: :student_donors
 end
