@@ -1,0 +1,21 @@
+{
+  "name": "scholar-ly-app",
+  "homepage": "https://github.com/Beta-23/Scholar.ly",
+  "authors": [
+    "Beta-23 <alfred.dominguez@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.2.18"
+  }
+}
