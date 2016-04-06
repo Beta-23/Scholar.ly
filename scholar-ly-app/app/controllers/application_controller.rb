@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   end
 
   def show
-  @Students = Student.search(params[:search])
+  @students = Student.search(params[:search])
   end
 
 end
