@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
     render 'layouts/application'
   end
 
+  def show
+  @Students = Student.search(params[:search])
+  end
+
 end
