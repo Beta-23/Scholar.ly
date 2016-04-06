@@ -6,4 +6,8 @@ root to: 'application#angular'
 
   resources :donor, only: [:create, :index, :show] do
   end
+
+  get '/signup' => 'student#new'
+  post '/student' => 'student#create'
+
 end
