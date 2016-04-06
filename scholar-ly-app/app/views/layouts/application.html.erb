@@ -12,11 +12,11 @@
 
 	<h3>Sign Up!</h3>
 
-	<%= form_for :student do |f| %>
+	<%= form_for :student, url: '/student' do |f| %>
 	 First name: <%= f.text_field :first_name %><br />
 	 Last name: <%= f.text_field :last_name %><br />
 	 Email: <%= f.text_field :email %><br />
-	 Password: <%= f.text_field :password_digest %><br />
+	 Password: <%= f.text_field :password %><br />
 	 Student H.S. Grade Level: <%= f.select :type_student_grade_level, ['-select-','9th', '10th', '11th', '12th']%><br /> 
 	 <%= f.submit %>
 
