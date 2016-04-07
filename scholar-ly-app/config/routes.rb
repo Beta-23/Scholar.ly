@@ -7,6 +7,8 @@ root to: 'students#new'
   resources :donor, only: [:create, :index, :show] do
   end
 
+  resources :charges
+
   # these routes are for showing users a login form, logging them in, and logging them out.
   get '/signup', to: 'students#new'
   get '/login' => 'sessions#new'

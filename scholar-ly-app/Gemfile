@@ -23,6 +23,8 @@ gem 'angularjs-rails'
 
 gem 'angular-rails-templates'
 
+gem 'stripe'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

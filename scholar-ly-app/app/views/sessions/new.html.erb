@@ -11,9 +11,5 @@
 
 <% end %>
 
-<% if current_student %>
-  Signed in as <%= current_student.email %> | <%= link_to "Logout", '/logout' %>
-<% else %>
-  <%= link_to 'Signup', signup_path %>
-<% end %>
+
 
