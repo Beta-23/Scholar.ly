@@ -4,9 +4,9 @@
 	 First name: <%= f.text_field :first_name %><br />
 	 Last name: <%= f.text_field :last_name %><br />
 	 Email: <%= f.text_field :email %><br />
-	 Password: <%= f.text_field :password %><br />
-	 Password Confirmation: <%= f.text_field :password_confirmation %><br />
-	 Scholarship Amount: <%= f.select :scholarhips, ['-select-','$1,000', '$2,000', '$3,000', '$4,000', '$5,000']%><br />
+	 Password: <%= f.password_field :password %><br />
+	 Password Confirmation: <%= f.password_field :password_confirmation %><br />
+	 Scholarship Amount: <%= f.select :scholarships, ['-select-', 1000, 2000, 3000, 4000, 5000 ]%><br />
 	 Student H.S. Grade Level: <%= f.select :type_student_grade_level, ['-select-','9th', '10th', '11th', '12th']%><br /> 
 	 <%= f.submit %>
 

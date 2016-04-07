@@ -2,6 +2,12 @@
 
 <h3>Student Profile</h3>
 
+First Name: <%= @student.first_name %><br />
+Last Name: <%= @student.last_name %><br />
+Scholarship Amount requested: <%= @student.scholarship_money %><br />
+Grade Level: <%= @student.type_student_grade_level %><br />
+Email: <%= @student.email %><br />
+
  <%= form_tag charges_path do %>
    <article>
      <% if flash[:error].present? %>
@@ -9,9 +15,9 @@
          <p><%= flash[:error] %></p>
        </div>
      <% end %>
-     <h1> Donate today!</h1>
+     <h1> Donate to <%= @student.first_name %> today!</h1>
      <label class="amount">
-       <span>Amount: $1,000.00</span>
+       <span>Min Amount: $1,000.00</span>
      </label>
    </article>
 

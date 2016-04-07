@@ -2,6 +2,11 @@ class Student < ActiveRecord::Base
   has_secure_password
   has_many :student_donors
   has_many :donors, through: :student_donors
+  validates_presence_of :scholarships
+
+  def scholarship_money
+    "$#{scholarships.to_i}"
+  end
 
 # def self.search(search)
 #   if search
