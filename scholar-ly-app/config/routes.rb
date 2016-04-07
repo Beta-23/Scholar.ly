@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-root to: 'application#angular'
+root to: 'students#new'
 
-  resources :student, only: [:create, :index, :show] do
+  resources :students, only: [:create, :index, :show, :new] do
     end
 
   resources :donor, only: [:create, :index, :show] do
   end
 
-  get '/signup' => 'student#new'
-  post '/student' => 'student#create'
+  # these routes are for showing users a login form, logging them in, and logging them out.
+  get '/signup', to: 'students#new'
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
 
 end

@@ -24,29 +24,29 @@ function($stateProvider, $urlRouterProvider) {
           return profile.get($stateParams.id);
         }]
       }
-  })
+  });
 
-.state('login', {
-      url: '/login',
-      templateUrl: 'auth/_login.html',
-      controller: 'AuthCtrl',
-      onEnter: ['$state', 'Auth', function($state, Auth) {
-        Auth.currentUser().then(function (){
-          $state.go('profile');
-        });
-      }]
+// .state('login', {
+//       url: '/login',
+//       templateUrl: 'auth/_login.html',
+//       controller: 'AuthCtrl',
+//       onEnter: ['$state', 'Auth', function($state, Auth) {
+//         Auth.currentUser().then(function (){
+//           $state.go('profile');
+//         });
+//       }]
 
-  })
-    .state('register', {
-      url: '/register',
-      templateUrl: 'auth/_register.html',
-      controller: 'AuthCtrl',
-      onEnter: ['$state', 'Auth', function($state, Auth) {
-        Auth.currentUser().then(function (){
-          $state.go('profile');
-        });
-      }]
-    });
+//   })
+    // .state('register', {
+    //   url: '/register',
+    //   templateUrl: 'auth/_register.html',
+    //   controller: 'AuthCtrl',
+    //   onEnter: ['$state', 'Auth', function($state, Auth) {
+    //     Auth.currentUser().then(function (){
+    //       $state.go('profile');
+    //     });
+    //   }]
+    // });
 
   $urlRouterProvider.otherwise('profile');
 }]);

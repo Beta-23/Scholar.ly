@@ -3,28 +3,15 @@
 <head>
 	
   <title>ScholarLyApp</title>
+  
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag 'application' %>
 </head>
 <body>
-	<h1>Scholar.ly</h1>
+	
 
-	<h3>Sign Up!</h3>
-
-	<%= form_for :student, url: '/student' do |f| %>
-	 First name: <%= f.text_field :first_name %><br />
-	 Last name: <%= f.text_field :last_name %><br />
-	 Email: <%= f.text_field :email %><br />
-	 Password: <%= f.text_field :password %><br />
-	 Student H.S. Grade Level: <%= f.select :type_student_grade_level, ['-select-','9th', '10th', '11th', '12th']%><br /> 
-	 <%= f.submit %>
-
-<% end %>
-
-
-
-
+<%= yield %>
 
 	</body>
 </html>
