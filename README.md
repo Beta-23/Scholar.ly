@@ -8,9 +8,9 @@ This web app connects H.S. students with philanthropist to invest in their colle
 
 [Trello UserStories](https://trello.com/b/ra7PHAfm/scholar-ly)
 
-[Wireframes]()
+[Wireframes](https://github.com/Beta-23/Scholar.ly/tree/master/Wireframes_Scholar.ly)
 
-[ERD]()
+[ERD](https://github.com/Beta-23/Scholar.ly/blob/master/ERD_Scholar.ly/ERD.JPG)
 
 ##Technologies Used:
 
