@@ -58,7 +58,7 @@ There are a few commands that are absolutely critical to your everyday usage of 
 
 * vendor/ - This folder is for third-party code. Any code included in the project that isn't managed by you (e.g. code from bower or locally bundled gems) should be put in this folder, and you should avoid editing vendored files.
 
-*.gitignore - A manifest of files to be ignored by git
+* .gitignore - A manifest of files to be ignored by git
 
 * Gemfile - Contains the RubyGems required by this project.
 
@@ -86,12 +86,12 @@ $rails new . --git --database=postgresql
 [Stripe-API Docs](https://stripe.com/docs/api)
 
 ##Credits:
-*Team Leader:  Alex White
-*Scrum Team!
-*WDI 26 Instructors
-*WDI TAs
-*Christina, Franchini, Monq, Jehnean, Ryan, Jamine, and Christine...you all rock!
-* ...
+* Team Leader:  Alex White
+* Scrum Team!
+* WDI 26 Instructors
+* WDI TAs
+* Christina, Franchini, Monq, Jehnean, Ryan, Jamine, and Christine...you all rock!
+
 
 
 
