@@ -1,13 +1,61 @@
-<h3>Sign Up!</h3>
 
-	<%= form_for :student, url: '/students' do |f| %>
-	 First name: <%= f.text_field :first_name %><br />
-	 Last name: <%= f.text_field :last_name %><br />
-	 Email: <%= f.text_field :email %><br />
-	 Password: <%= f.password_field :password %><br />
-	 Password Confirmation: <%= f.password_field :password_confirmation %><br />
-	 Scholarship Amount: <%= f.select :scholarships, ['-select-', 1000, 2000, 3000, 4000, 5000 ]%><br />
-	 Student H.S. Grade Level: <%= f.select :type_student_grade_level, ['-select-','9th', '10th', '11th', '12th']%><br /> 
-	 <%= f.submit %>
+	<div class="video-wrapper">
+	
+		<div class="hero-info">
+			<div>
 
-	 <% end %>
+				<h1>Welcome to Scholar.ly!</h1>
+
+				<h3>Crowdfunding for a better future.</h3>
+
+			</div>
+
+			
+
+<div class="container">
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  Sign Up Now
+	</button>
+
+
+  
+</div>
+			
+		</div>
+
+		<video id="video" src="https://a0.muscache.com/airbnb/static/SanFrancisco-P1-1.mp4" autoplay preload="auto" loop="loop">
+		</video>
+		
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Start your college saving today!</h4>
+        </div>
+        <div class="modal-body">
+          <%= form_for :student, url: '/students' do |f| %>
+			 First name: <%= f.text_field :first_name %><br />
+			 Last name: <%= f.text_field :last_name %><br />
+			 Email: <%= f.text_field :email %><br />
+			 Password: <%= f.password_field :password %><br />
+			 Password Confirmation: <%= f.password_field :password_confirmation %><br />
+			 Scholarship Amount: <%= f.select :scholarships, ['-select-', 1000, 2000, 3000, 4000, 5000 ]%><br />
+			 Student H.S. Grade Level: <%= f.select :type_student_grade_level, ['-select-','9th', '10th', '11th', '12th']%><br /> 
+			 <%= f.submit %>
+
+			<% end %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+	  </div>
+	</div>

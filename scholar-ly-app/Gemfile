@@ -25,6 +25,8 @@ gem 'angular-rails-templates'
 
 gem 'stripe'
 
+gem "rails-bootstrap-helpers"
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
