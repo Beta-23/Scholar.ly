@@ -82,4 +82,11 @@ margin-right: 13%;
   border-right: 55px solid transparent;
 }
 
+#welcome {
+  text-align: center;
+}
+
+#about {
+  margin-top: 17%;
+}
 
