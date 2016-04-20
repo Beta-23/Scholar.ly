@@ -1,6 +1,8 @@
-# Scholar.ly
+# Scholarly
 =====
 ##Description:
+
+[Scholarly](https://desolate-anchorage-32320.herokuapp.com/)
 
 This web app connects H.S. students with philanthropist to invest in their college education locally. Transforming the way college education is funded.
 
